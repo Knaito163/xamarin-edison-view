@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:edisonNativeApp" x:Class="edisonNativeApp.edisonNativeAppPage">
+	<!--<Label Text="Welcome to Xamarin Forms!" />-->
+    <StackLayout>
+        <TableView Intent="Settings" Margin="10,30,10,10" RowHeight="100">
+            <TableView.Root>
+                <TableSection Title="センサー取得値" >
+                    <TextCell Text="温度" Detail="" x:Name="te" />
+                    <TextCell Text="湿度" Detail="" x:Name="hu" />
+                    <TextCell Text="人感" Detail="" x:Name="pr" />
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+        <Button Text="Get Sensors!!" Clicked="getSensors" VerticalOptions="Center" HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
